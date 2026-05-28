@@ -1,0 +1,19 @@
+<template>
+    This is Container component<br></br>
+    <template for:each={ls} for:item="idol">
+            
+            <p key={idol.jersey}>{idol.name}</p>
+            <div key={idol.jersey}>
+
+                <c-child-component nm={idol.name} cn={idol.country}></c-child-component>
+            </div>
+            
+        
+        </template>
+        <div lwc:if={flag}>
+                This content is being displayed only after the parent method has called the child method  
+            </div>
+        
+    
+         
+</template>

@@ -1,0 +1,35 @@
+<template>
+   <div class="slds-m-around_large">
+    <a href="https://www.fcbarcelona.com/en/" onclick={handleClick}>CLICK HERE</a>
+    <lightning-input type='text' label='First_name ' placeholder='Enter your first name here ...' onchange={handleChange}></lightning-input>
+    <lightning-input type='text' label='last_name' placeholder='Enter your last name here ...' onchange={handleChange}></lightning-input>
+    <lightning-input type='email' label='Email' placeholder='Enter your email here...' onChange={handleChange}></lightning-input>
+    <lightning-input type='number' label='age' placeholder='Enter your age here...' onChange={handleChange}></lightning-input>
+    <lightning-input type='number' label='salary' formatter='currency' placeholder='Enter your salary here...'></lightning-input>'
+   <!-- lwc:<lightning-input-address
+      address-label="Address"
+      street-label="Street"
+      city-label="City"
+      country-label="Country"
+      province-label="Province"
+      postal-code-label="PostalCode"
+      street="121 Spear St."
+      city="San Francisco"
+      country="US"
+      province="CA"
+      postal-code="94105"
+       
+      field-level-help="Help Text for input-address field" 
+    ></lightning-input-address>-->
+    <lightning-combobox
+      name="progress"
+      label="Status"
+      value={value}
+      placeholder="Select Progress"
+      options={options}
+      onchange={handleChange} 
+       
+       
+    ></lightning-combobox> 
+    </div>
+</template>

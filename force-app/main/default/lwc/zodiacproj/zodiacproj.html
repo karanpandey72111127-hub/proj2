@@ -1,0 +1,12 @@
+<template>
+    <div >
+    <lightning-card class="slds-card">
+        <lightning-input-name label="Full Name" value={fn} id="f" onchange={namenew}></lightning-input-name>
+        <lightning-input type="date" name="input1" value={birthday} label="Enter your DOB" onchange={birthnew} ></lightning-input>
+        <lightning-button variant="brand" label="Click to proceed" onclick={logic} style="align-self: center;background-color: yellow;" class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>   
+    <lightning-card>
+        Hi {fn},
+    </lightning-card> 
+    </div>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="recent 20 cases">
+       <div for:each={casesList} for:item="caseRecord" key={caseRecord.Id}>
+            
+        <lightning-record-view-form key={caseRecord.Id} record-id={caseRecord.Id} object-api-name="Case" for:each={casesList} for:item="caseRecord" >
+            <lightning-output-field >Case Id : {caseRecord.Id}</lightning-output-field><br/>
+            <lightning-output-field >Case subject : {caseRecord.Subject}</lightning-output-field><br/>
+            <lightning-output-field >Case status : {caseRecord.Status}</lightning-output-field><br/>
+        </lightning-record-view-form>
+    </div>
+    
+    </lightning-card>
+</template>

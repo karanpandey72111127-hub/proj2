@@ -1,0 +1,37 @@
+<template>
+    
+    <lightning-button label="button 1" title="first button" onclick={click1} class='slds-button slds-button-brand'></lightning-button>
+    <lightning-button label="button2" title="second button" onclick={click2} class='bs'></lightning-button>
+    {tESTINGPURPOSE}
+    <br>
+    <div class='slds-card'>
+         {ins}
+    </div>
+    </br>
+    <div lwc:if='{b1}' class='slds-card'>{content1}</div>
+    <div lwc:elseif='{b2}' class='slds-card'>{content2}</div>
+    <div lwc:else>{contentDef}</div>
+    <div if:true={showTom}>
+       Tom is true
+       <img src="https://tomandjerry.fandom.com/wiki/Tom_Cat" alt="tom"/>
+    </div>
+    <div if:false={showTom}>
+       Tom is false 
+       <img src="https://en.wikipedia.org/wiki/Jerry_Mouse" alt="jerry"/>
+    </div>
+    <template lwc:if={showTom}>
+        this template is when tom is true
+    </template>
+    <template lwc:elseif={showjerry}>
+        this template is when jerry is true
+    </template>
+   <!--- <template for:each={users} for:item={user} for:index={index}>
+       <div key="{user.email}" class="slds-m-around_large">
+        
+            {user.name}
+            {user.email}
+       
+
+       </div>
+    </template>-->
+</template>

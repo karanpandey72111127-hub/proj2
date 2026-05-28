@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+            <lightning-record-edit-form record-id={recordId} object-api-name={objectApi} >
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-input-field field-name="Name"></lightning-input-field>
+                <lightning-input-field field-name="OwnerId"></lightning-input-field>
+                <lightning-input-field field-name="Phone"></lightning-input-field>
+                <lightning-button type="submit" label="Save" brand="variant"></lightning-button>
+                <lightning-button type="reset" label="Reset" brand="variant"></lightning-button>
+            </div>
+        </div>
+    </lightning-record-edit-form>
+    </lightning-card>
+
+</template>

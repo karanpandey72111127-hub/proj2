@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+        Parent component<br/>
+        <c-child-lifecycle-hook onsendtoparent={func2}></c-child-lifecycle-hook>
+        <br/>final value is : {val}<br/>
+        received the below values from child : {val2.id}<hr/>{val2.name}<hr/>{val2.club}
+    </lightning-card>
+</template>

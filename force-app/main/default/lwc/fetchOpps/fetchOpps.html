@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="fetch opportunity of a particulat stage">
+        <lightning-input label="Enter stage name" onchange={handleChange} value={stageName}></lightning-input>
+        <lightning-button label="Fetch Opportunities" onclick={getOpps} class="slds-m-top_small"></lightning-button>
+        <div class="slds-m-top_small">
+           <table class="slds-table slds-table_cell-buffer slds-table_bordered" for:each={oppr} for:item="opp" key={opp.id}>
+                <tr>
+                    <th> Id</th>
+                    <th>Name</th>
+                    <th>Stage Name</th>
+                </tr>
+                <tr key={opp.id}>
+                    <td>{opp.Id}</td>
+                    <td>{opp.Name}</td>
+                    <td>{opp.StageName}</td>
+                </tr>
+            </table>
+
+        </div>
+            
+            
+    </lightning-card>
+</template>

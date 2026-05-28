@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="LDS with custom view">
+<lightning-record-view-form record-id={recordId} object-api-name={obApi}  mode="readonly">
+    <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-3">
+           <lightning-output-field field-name="AccountNumber"></lightning-output-field>
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+           <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+           <lightning-output-field field-name="Rating"></lightning-output-field>
+        </div>
+    </div>
+</lightning-record-view-form>
+    </lightning-card>
+</template>

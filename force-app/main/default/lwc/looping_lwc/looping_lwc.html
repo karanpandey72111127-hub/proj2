@@ -1,0 +1,19 @@
+<template>
+    
+        <lightning-card  title="Hello">
+            <ol type='number' start="1"></ol>
+             <div for:each={players} for:item='player' key={player.jersey_Number}>
+               
+                <li>
+                    {player.name}
+                    <ul type='bullet'>
+                        <li>{player.jersey_Number}</li>
+                        <li>{player.club}</li>
+                    </ul>
+                </li>
+               
+             </div>
+            </ol>
+        </lightning-card>
+
+</template>
